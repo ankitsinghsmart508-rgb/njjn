@@ -235,6 +235,27 @@ export function MovieDetails({ slug }: MovieDetailsProps) {
             <AdBanner />
             <MiddleBannerAd />
 
+            {/* Important Notice & Contact Section */}
+            <div className="bg-yellow-50 dark:bg-yellow-950/20 border border-yellow-200 dark:border-yellow-800 rounded-lg p-4 my-4 text-center">
+              <h3 className="text-lg font-bold text-yellow-700 dark:text-yellow-400 mb-2">
+                ⚠️ IMPORTANT NOTICE / ज़रूरी सूचना ⚠️
+              </h3>
+              <p className="text-sm text-muted-foreground mb-4">
+                If any download link is not working, we are really sorry for the inconvenience.
+                Please message us immediately on our Telegram. Our team will provide you the direct working link.
+                Just tell us the movie name, and we’ll help you as soon as possible.
+              </p>
+              <Button asChild className="bg-blue-600 hover:bg-blue-700 text-white font-semibold">
+                <a
+                  href="https://t.me/smartsaathidiscussion"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Contact Us
+                </a>
+              </Button>
+            </div>
+
             {movie.watchUrl && (
               <div className="flex justify-center my-2">
                 <Button
